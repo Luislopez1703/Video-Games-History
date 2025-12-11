@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Historia y Creadores de los Videojuegos</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="img/nariy.gif">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <h1 class="site-title">Historia de los video juegos</h1>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="creadores.html">Creadores</a>
+      <a href="eras.html">Eras</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h2>Pioneros que cambiaron la historia</h2>
+      <p>
+        Los videojuegos han sido moldeados por grandes mentes que revolucionaron la forma de jugar, 
+        diseñar mundos y contar historias digitales. Aquí reunimos la historia, las eras y los creadores
+        que definieron generaciones.
+      </p>
+      <!-- conservamos la apariencia del enlace pero añadimos id para el script -->
+      <a class="btn" id="btnVerCreadores" href="#!">Ver creadores</a>
+      <a class="btn" href="introduccion.html">Introducción a la historia</a>
+
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-images">
+        <img src="img/pioneros.png" alt="Pioneros" />
+        <img src="img/creado.gif" alt="Creadores GIF" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRUSEL (overlay modal) - oculto por defecto -->
+  <div id="modalCarousel" class="carousel-overlay hidden" aria-hidden="true">
+    <div class="carousel-content">
+      <button class="close-carousel" id="closeCarousel" aria-label="Cerrar">✕</button>
+      <button class="prev" aria-label="Anterior">❮</button>
+
+      <div class="carousel-track" role="list">
+        <img src="img/pioneros.png" class="carousel-slide active" alt="Pioneros">
+        <img src="img/nolan.png" class="carousel-slide" alt="Nolan Bushnell">
+        <img src="img/miyamoto.png" class="carousel-slide" alt="Shigeru Miyamoto">
+        <img src="img/kojima.png" class="carousel-slide" alt="Hideo Kojima">
+        <img src="img/pong.png" class="carousel-slide" alt="Pong">
+        <img src="img/videogame.gif" class="carousel-slide" alt="Video game gif">
+      </div>
+
+      <button class="next" aria-label="Siguiente">❯</button>
+    </div>
+  </div>
+
+  <!-- HISTORIA -->
+  <section id="historia" class="cards-container">
+    <article class="card">
+      <div class="card-images centered">
+        <img src="img/pong.png" alt="Pong">
+        <img src="img/videogame.gif" alt="Video Game GIF">
+      </div>
+      <h2>Desde Pong hasta la era moderna</h2>
+      <p>
+        La historia de los videojuegos inicia con experimentos como <em>Tennis for Two</em> y continúa
+        con éxitos como <strong>Pong</strong>. La industria pasó por arcades, consolas caseras,
+        la revolución de Nintendo y Sega, hasta llegar a mundos 3D y experiencias en línea.
+      </p>
+      <p>
+        Hoy los videojuegos son cultura, arte y tecnología: gráficos avanzados, IA y conexiones globales.
+      </p>
+    </article>
+  </section>
+
+</main>
+
+<footer class="footer">© 2025 — DERECHOS DE LUIS LOPEZ, GENESIS CHAMBERS Y EDITHSY DEL BUSTO</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
